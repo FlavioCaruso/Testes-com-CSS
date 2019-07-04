@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Brincando com CSS</title>
+</head>
+<body>
+    <div class="total">
+        <div class="menu">
+            <div class="menu-conteudo">
+            <button class="btn-menu">+</button>
+            <div class="conteudo">
+                <h4 class="titulo">Lorem Ipsum</h4>
+                <ul class="lista">
+                    <li>Lorem Ipsum, Lorem Ipsum, Lorem Ipsum</li>
+                    <li>Lorem Ipsum, Lorem Ipsum, Lorem Ipsum</li>
+                </ul>
+                <div class="linha"></div>
+                <div class="linha" id="direita"></div>
+                <div class="linha" id="baixo"></div>
+                <div class="linha" id="esquerda"></div>
+                <div class="social">
+                    <span id="face"><i class="fab fa-facebook"></i></span>
+                    <span id="insta"><i class="fab fa-instagram"></i></span>
+                    <span id="youtube"><i class="fab fa-youtube-square"></i></span>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    let botaoMenu = document.querySelector(".btn-menu");
+
+let conteudoMenu = document.querySelector(".menu-conteudo");
+
+botaoMenu.addEventListener("click", () => {
+  conteudoMenu.classList.toggle("aberto");
+})
+</script>
